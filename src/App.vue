@@ -1,26 +1,29 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="flex flex-col min-h-[100dvh]">
+    <HeaderComp />
+    <main class="flex-1">
+      <HeroComp />
+      <FeaturedComp class="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white" />
+      <GalleryComp class="w-full py-12 md:py-24 lg:py-32" />
+    </main>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HeaderComp from './components/header.vue'
+import HeroComp from './components/hero.vue'
+import FeaturedComp from './components/featured.vue'
+import GalleryComp from './components/gallery.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HeaderComp,
+    HeroComp,
+    FeaturedComp,
+    GalleryComp
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+

@@ -1,4 +1,5 @@
-# inkscribe
+# InkScribe SIT 
+InkScribe is a Project initiated by Siliguri Institute of Technology to empower the creativity of students from all departments.
 
 ## Project setup
 ```
